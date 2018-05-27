@@ -1,0 +1,15 @@
+li
+ lux
+  wikipedia
+   https://en.wikipedia.org/wiki/Lux
+  unit
+   1 lx
+  conversion-to-lumens
+   1 lumen/m²
+  li-function
+   li lux
+  li-response
+   https://en.wikipedia.org/wiki/Lux
+ lux
+li
+
