@@ -1,0 +1,7 @@
+var li = {
+  "li": "li",
+  "li-lux": "light output of 1 lumen/m²",
+  "li_lux": 1
+}
+
+console.log(li.li); // returns "li"
