@@ -1,19 +1,25 @@
 li
- li-parser-js
+ li
+ 
+li-parser-js
+ def
   a parser for li files written in JavaScript 
  runtime
   node
+  bash
  parser
   https://en.wikipedia.org/wiki/Parsing#Computer_languages
- def
-  parser will pick this very text and create a tree of accessible links which can be accessed later
  def2
+  parser will pick this very text and create a tree of accessible links which can be accessed later
+ def3
   this-runtime
    node
- def2
- def3
+ def4
   li-parser
    https://en.wikipedia.org/wiki/Parsing#Computer_languages
    https://eli.thegreenplace.net/2009/02/16/abstract-vs-concrete-syntax-trees/
    https://medium.freecodecamp.org/the-programming-language-pipeline-91d3f449c919
-li
+ progress
+  1%
+ priority
+  -
