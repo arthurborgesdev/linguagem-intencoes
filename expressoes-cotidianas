@@ -1,0 +1,43 @@
+li
+ li
+ 
+sim 
+ é 
+  eh
+  
+não 
+ nao 
+  n
+
+true 
+ eh
+ 
+false
+ n
+ 
+(Ontem fui à feira comprar banana, melão, jaca e macarrão)
+ hoje-1 (ou ontem)
+  feira
+   banana
+   melao
+   jaca
+   macarrao
+coment1
+ (aqui a pontuação é omitida pois não altera o sentido 
+ das palavras e economiza aperto duplo de teclas 
+ em teclado abnt)
+coment2
+ (liguagem que não é li dentro de arquivo li vai em 
+ parênteses)
+
+(Esta função acende o led quando aperta o botão e apaga ao apertar do mesmo botão)
+botao
+ toggle
+  led
+
+(Sensor de temperatura é ligado ao pino 13, sensor de presença ao pino 24, e led ao pino 10)
+pins
+ temp 13
+ pir 24
+ led 10
+ 
