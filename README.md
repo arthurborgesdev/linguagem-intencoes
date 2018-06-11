@@ -100,3 +100,30 @@ _valor_parts_barco
  cambio 1500
  helice 7000
 ```
+
+7. Blocos mestres (ou nós-mestres) são blocos que tem precedência em relação aos outros blocos. Geralmente contém definições que precisam ser lidas e/ou processadas primeiro para que os outros blocos façam sentido. Exemplo: Jogo de pedra-papel-tesoura:
+
+```
+(Aqui são listadas as regras do jogo)
+-pedra-papel-tesoura
+ pedra
+  > tesoura
+ papel
+  > pedra
+ tesoura
+  > papel
+
+(Aqui começa o jogo)
+arthur
+ tesoura
+  _resultado?
+
+computador
+ pedra
+  _resultado?
+
+_resultado?
+ computador
+  (computador vence)
+
+```
