@@ -42,7 +42,7 @@ arthur
 li
  li
   ?
-   inicialização de li
+   inicializacao de li
 ```
 
 4. Strings são escritas normalmente, mas sem pontuação, e sem aspas
@@ -65,6 +65,38 @@ li
 _linguagem_de_intencoes
  ?
   li
+```
 
+6. Cada bloco identado em li é um nó, que explicita um bloco de pensamento. 
+Blocos assim não tem fim, mas para melhorar a leitura, os blocos podem ser
+divididos em vários blocos diferentes, que são ligados por variáveis.
 
+```
+li
+ li
+ 
+(aqui faremos uma descrição das peças em uma oficina) 
+motor
+ ?
+  (peça responsável por movimentar o portador dela)
+ carro
+ moto
+ _barco
+ (aqui a identação significa que carro, moto e _barco possuem motores e que ao mesmo tempo,
+ só existem três veículos dentro da oficina, no momento)
 
+(aqui o _barco foi redefinido para melhorar a leitura e escrita)
+_barco
+ cor
+  azul
+ qtd motores
+  2
+ estado (ou status, em inglês)
+  45%
+ _valor_parts_barco
+  8500
+
+_valor_parts_barco
+ cambio 1500
+ helice 7000
+```
