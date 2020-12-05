@@ -1,129 +1,154 @@
 # li
 
-## Definição
+## Definition
 
-li é linguagem de intenções, para comunicar desejos e/ou intenções de forma clara e objetiva para humanos e máquinas.
+li is "language of intentions", to communicate wishes and/or intentions in a clear and objective way to humans and machines.
 
-Atualmente está sendo usada apenas para escrita de documentação de software, mas no futuro parsers podem ser criados
-para ela, a fim de ser interpretada por computadores.
+Today it is been used only for software documentation writing, but in the future, parsers can be created for it, to be interpreted by
+computers.
 
-1. Todo arquivo ```li``` começa com
-
-```
-li
- li 
-```
-
-## Exemplos
-
-1. Comentários dentro do código li são escritos dentro de parênteses
+1. Each `li` file starts with
 
 ```
 li
  li
-(aqui em cima eu defini li)
 ```
 
-2. Atribuição de valores se dá na forma de um \r (carriage return) seguido de espaço:
+## Examples
+
+1. Comments inside li code are written inside of de parenthesis
 
 ```
-(aqui eu inicializo li dizendo que o valor de li é li)
 li
  li
+  (above I defined li)
+```
 
-(aqui eu digo que o arthur é o criador de li)
+2. Value assignment is in the form o \n (new line) followed by a space:
+
+```
+(here I initialize li telling that the value of li is li)
+li
+ li
+```
+
+```
+(here I say that "arthur" is the creator of li)
 arthur
- criador
+ creator
   li
 ```
-3. O uso de interrogação denota questionamento, ou busca pela razão, pelo por quê daquilo que foi escrito:
+
+3. The use of the question mark is to ask things, for the search for reason, for the reason that it was written
 
 ```
 li
  li
   ?
-   inicializacao de li
+   li initialization
 ```
 
-4. Strings são escritas normalmente, mas sem pontuação, e sem aspas
+4. Strings are writing normally, but without punctuation and without quotation marks
 
 ```
 li
  li
   ?
-   eh linguagem de intencoes
+   eh language of intentions
+   ("eh" is a portuguese-li word that corresponds to "is" in English)
 ```
 
-5. O uso de _ (underscore) indica criação de variáveis com aquele nome
-
-```
-li
- li
-  _linguagem_de_intencoes
-   guarda a arvore de nos acima
-
-_linguagem_de_intencoes
- ?
-  li
-```
-
-6. Cada bloco identado em li é um nó, que explicita um bloco de pensamento. 
-Blocos assim não tem fim, mas para melhorar a leitura, os blocos podem ser
-divididos em vários blocos diferentes, que são ligados por variáveis.
+5. The use of \_ (underscore) indicates the creation of variables with that name
 
 ```
 li
  li
- 
-(aqui faremos uma descrição das peças em uma oficina) 
-motor
- ?
-  (peça responsável por movimentar o portador dela)
- carro
- moto
- _barco
- (aqui a identação significa que carro, moto e _barco possuem motores e que ao mesmo tempo,
- só existem três veículos dentro da oficina, no momento)
+  _language_of_intents
+   (store the above node tree)
 
-(aqui o _barco foi redefinido para melhorar a leitura e escrita)
-_barco
- cor
-  azul
- qtd motores
-  2
- estado (ou status, em inglês)
+  _language_of_intents
+   ?
+    li
+```
+
+6. Each indented block in li is a node, that explicits a thinking block. Blocks like that have no end, but to improve reading, blocks can be divided into many different blocks, that are connected by variables.
+
+```
+li
+ li
+
+(here we will do a report of some workshop parts)
+engine
+ ?
+  (part responsible to move its bearer)
+ car
+ motorcycle
+ _boat
+ (here, the indentation means that the car, motorcycle and the boat, have engines and at the same time there is only three vehicles inside the workshop at the moment)
+
+(here the _boat variable has been redefined to improve reading and writing)
+_boat
+ color
+  blue
+   engine quantity
+    2
+ status
   45%
- _valor_parts_barco
+ _boat_parts_value
   8500
 
-_valor_parts_barco
- cambio 1500
- helice 7000
+ _boat_parts_value
+ gearshift 1500
+ propeller 7000
 ```
 
-7. Blocos mestres (ou nós-mestres) são blocos que tem precedência em relação aos outros blocos. Geralmente contém definições que precisam ser lidas e/ou processadas primeiro para que os outros blocos façam sentido. Exemplo: Jogo de pedra-papel-tesoura:
+7. Master blocks (or master-nodes) are blocks that have precedence over other blocks. Generally, they contain definitions that need to be read and/or processed first for that other blocks makes sense. Example: Rock Paper Scissors Game:
 
 ```
-(Aqui são listadas as regras do jogo)
--pedra-papel-tesoura
- pedra
-  > tesoura
- papel
-  > pedra
- tesoura
-  > papel
+(here are listed the rules of the game)
+-rock-paper-scissor
+ rock
+  > scissor
+ paper
+  > rock
+ scissor
+  > paper
 
-(Aqui começa o jogo)
+(The game starts here)
 arthur
- tesoura
-  _resultado?
+ scissor
+  \_result?
 
-computador
- pedra
-  _resultado?
+computer
+ rock
+  _result?
 
-_resultado?
- computador
-  (computador vence)
+\_result?
+ computer
+ (computer wins)
+```
 
+## Previous commits
+
+Various aspects of li behavior and history aren't present here on this introductory README.
+
+They are instead embedded in previous commits since its first existence on this repository.
+
+You can check another forms both in english-li and portuguese-li by searching previous commits or forking it. Enjoy! :)
+
+## Trivia
+
+PS: linguagem-intencoes is the name of li in Brazilian Portuguese
+
+PS2: A little bit of the history of this project:
+
+```
+Jan 2018
+
+Project description
+Theory of Language of Intentions - how to quickly express wishes for humans and robots
+
+This project arose as a side effect of the second manic phase of bipolar disorder. For several days I mostly didn't sleep thinking and crafting an optimized language to communicate fast with both humans and robots (computers). All this sacrifice and cerebral cells burning turned out into a lot of verbs, nouns, and keywords that expressed wishes well and straightforward both in English and Portuguese. But, as I lacked the strength and knowledge to develop a compiler or interpreter for it (I started one in JavaScript but without success), it didn't work with computers.
+
+Now it stands as a mark in my life and career, representing a lot of my personality and tastes for language and computer programming. I do not have plans to improve or finish it for now, mainly because I have found a perfect substitute: Ruby! :)
 ```
