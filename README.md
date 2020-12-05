@@ -142,7 +142,6 @@ PS: linguagem-intencoes is the name of li in Brazilian Portuguese
 
 PS2: A little bit of the history of this project:
 
-```
 Jan 2018
 
 Project description
@@ -151,4 +150,3 @@ Theory of Language of Intentions - how to quickly express wishes for humans and 
 This project arose as a side effect of the second manic phase of bipolar disorder. For several days I mostly didn't sleep thinking and crafting an optimized language to communicate fast with both humans and robots (computers). All this sacrifice and cerebral cells burning turned out into a lot of verbs, nouns, and keywords that expressed wishes well and straightforward both in English and Portuguese. But, as I lacked the strength and knowledge to develop a compiler or interpreter for it (I started one in JavaScript but without success), it didn't work with computers.
 
 Now it stands as a mark in my life and career, representing a lot of my personality and tastes for language and computer programming. I do not have plans to improve or finish it for now, mainly because I have found a perfect substitute: Ruby! :)
-```
